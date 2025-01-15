@@ -7,7 +7,7 @@ jobs:
             matrix:
                 node-version: [12,14,16]
                 operation-system: [ubuntu-latest, windows-latest]
-                inclued:
+                incluede:
                     - node-version: 18
                       operation-system: ubuntu-latest
                 exclude:
@@ -25,4 +25,3 @@ jobs:
               run: npm ci
             - name: Build Project
               run: npm run build
-              
